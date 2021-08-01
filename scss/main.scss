@@ -9,16 +9,17 @@
 
 html {
     font-size: 62.5%;
+    overflow-y: hidden;
 }
 
 body {
     height: 100vh;
     font-family: 'Comfortaa', sans-serif;
     background-image: linear-gradient(to right bottom, rgb(119, 182, 253), rgb(88, 252, 189), rgb(171, 160, 238));
-
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -30,7 +31,6 @@ body {
 }
 
 .calendar {
-    min-height: 60vh;
     width: 45rem;
 }
 
@@ -78,7 +78,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
     }
 
     width: 100%;
@@ -103,7 +102,7 @@ body {
         width: calc(40.2rem/7);
         height: 5rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         transition: background-color .2s;
     }
@@ -122,4 +121,18 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
+}
+
+@media (max-width: 700px) {
+    body {
+        height: 93vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        transform: scale(.8);
+    }
+
 }
