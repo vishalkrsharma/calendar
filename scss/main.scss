@@ -9,75 +9,7 @@
 
 html {
     font-size: 62.5%;
-    
 }
-
-
-
-// .flex {
-//     display: flex;
-//     justify-content: space-evenly;
-// }
-
-// .month, .year {
-
-//     & .dropbtn {
-//         background-color: white;
-//         width: 15rem;
-//         height: 4rem;
-//         border: none;
-//         border-radius: 1.5rem;
-//         font-size: 2rem;
-//         font-family: 'Comfortaa', sans-serif;
-//     }
-
-//     & .content {
-
-//         & a {
-//             color: black;
-//             padding: 1rem;
-//             text-decoration: none;
-//             display: block;
-//             border-radius: 1.5rem;
-//             text-align: center;
-//             -webkit-tap-highlight-color: transparent;
-//             font-size: 1.5rem;
-//         }
-
-//         display: none;
-//         position: absolute;
-//         width: 15rem;
-//         z-index: 10;
-//         padding: 1rem;
-//         border-radius: 1.5rem;
-//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-//         background-color: white;
-
-//     }
-
-//     & .content a:hover {
-//         background-color: rgba(221, 221, 221, 0.658);
-//     }
-
-//     &:hover .content {
-//         display: block;
-//     }
-
-//     &:hover .dropbtn {
-//         background-color: #ffffff94;
-//     }
-
-//     position: relative;
-//     width: 15rem;
-//     height: 4rem;
-    
-// }
-
-// .month-div {
-//     width: 15rem;
-//     height: 4rem;
-//     text-align: center;
-// }
 
 body {
     height: 100vh;
@@ -126,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 4rem;
     border-radius: 1.5rem;
 } 
 
