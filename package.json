@@ -1,5 +1,5 @@
 {
-  "name": "calender",
+  "name": "calendar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vishalkrsharma/calender.git"
+    "url": "git+https://github.com/vishalkrsharma/calendar.git"
   },
   "author": "vishalkrsharma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vishalkrsharma/calender/issues"
+    "url": "https://github.com/vishalkrsharma/calendar/issues"
   },
-  "homepage": "https://github.com/vishalkrsharma/calender#readme",
+  "homepage": "https://github.com/vishalkrsharma/calendar#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
   }
