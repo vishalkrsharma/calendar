@@ -82,6 +82,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .weekdays .weekend {
+    color: red; }
 
 .days {
   width: 100%;
