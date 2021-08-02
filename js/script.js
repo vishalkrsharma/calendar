@@ -1,5 +1,7 @@
 const date = new Date();
 
+let count = 0;
+
 const renderCalendar = () => {
     date.setDate(1);
 
@@ -19,7 +21,7 @@ const renderCalendar = () => {
 
     document.querySelector('.date h1').innerHTML = months[date.getMonth()];
 
-    document.querySelector('.date p').innerHTML = new Date().toDateString();
+    document.querySelector('.date p button').innerHTML = new Date().toDateString();
 
     let days = "";
 
@@ -43,11 +45,20 @@ const renderCalendar = () => {
 
 document.querySelector('.prev').addEventListener('click', () => {
     date.setMonth(date.getMonth() - 1);
+    count--;
     renderCalendar();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
     date.setMonth(date.getMonth() + 1);
+    count++;
+    renderCalendar();
+});
+
+
+document.querySelector('button').addEventListener('click', () => {
+    date.setMonth(date.getMonth() - count);
+    count=0;
     renderCalendar();
 });
 
