@@ -152,7 +152,8 @@ body {
     padding-bottom: .5rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
     #event .heading h1 {
-      margin: auto; }
+      margin: auto;
+      font-size: 3rem; }
     #event .heading button {
       font-size: 3rem;
       background-color: rgba(255, 0, 0, 0.4);
@@ -161,7 +162,7 @@ body {
       color: white;
       border-style: none; }
   #event .content {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem; }
 
 #overlay {

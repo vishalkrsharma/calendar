@@ -55,14 +55,14 @@ const renderCalendar = () => {
 
     const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-    document.querySelector('.date h1').innerHTML = months[date.getMonth()];
+    document.querySelector('.date h1').innerHTML = `${months[date.getMonth()]}, ${date.getFullYear()}`;
 
     document.querySelector('.date p button').innerHTML = new Date().toDateString();
 
     let days = "";
 
     for(let x=firstDayIndex; x>0; x--){
-        days += `<button class="prev-date">${prevLastDay - x +1}</button>`;
+        days += `<button class="prev-date">${prevLastDay - x + 1}</button>`;
     }
 
     for(let i=1;i<=lastDay;i++) {
@@ -75,8 +75,8 @@ const renderCalendar = () => {
 
     for(let j=1; j<=nextDays; j++) {
         days+=`<button class="next-date">${j}</button>`;
-        monthDays.innerHTML = days;
     }
+    monthDays.innerHTML = days;
 };
 
 document.querySelector('.prev').addEventListener('click', () => {
@@ -93,7 +93,6 @@ document.querySelector('.next').addEventListener('click', () => {
     renderEvent();
 });
 
-
 document.querySelector('button').addEventListener('click', () => {
     date.setMonth(date.getMonth() - count);
     count=0;
@@ -102,10 +101,4 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 renderCalendar();
-
 renderEvent();
-
-
-
-
-
