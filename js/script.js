@@ -67,9 +67,9 @@ const renderCalendar = () => {
 
     for(let i=1;i<=lastDay;i++) {
         if(i === new Date().getDate() && date.getMonth() === new Date().getMonth()){
-            days += `<button class="today" data-event-target="#event">${i}</button>`;
+            days += `<button class="today" data-event-target="#event">${i}<div class="dot"></div></button>`;
         } else {
-            days += `<button data-event-target="#event">${i}</button>`;
+            days += `<button data-event-target="#event">${i}<div class="dot"></div></button>`;
         }
     }
 
