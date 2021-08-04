@@ -69,10 +69,11 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 1.5rem;
   z-index: 10;
-  height: max-content;
+  height: 52vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; }
+  justify-content: space-evenly;
+  align-items: center; }
 
 .weekdays {
   width: 100%;
@@ -98,8 +99,9 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0.2rem;
-  max-height: 60rem; }
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.2rem; }
   .days button {
     border-radius: 1.5rem;
     font-size: 1.4rem;
@@ -115,7 +117,7 @@ body {
     position: relative; }
     .days button:hover {
       cursor: pointer; }
-    .days button div {
+    .days button .dot {
       height: 1rem;
       width: 1rem;
       background-image: linear-gradient(to bottom, rgba(20, 233, 134, 0.8), rgba(29, 139, 212, 0.8));
