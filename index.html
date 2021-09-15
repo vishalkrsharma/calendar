@@ -1,106 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendar</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="calendar">
-            <div class="month">
-                <i class="fas fa-angle-left prev"></i>
-                <div class="date">
-                    <h1></h1>
-                    <p>Today : &nbsp;&nbsp;<button></button></p>
-                </div>
-                <i class="fas fa-angle-right next"></i>
-            </div>
-            <div class="main">
-                <div class="weekdays">
-                    <div class="weekend">Sun</div>
-                    <div>Mon</div>
-                    <div>Tue</div>
-                    <div>Wed</div>
-                    <div>Thu</div>
-                    <div>Fri</div>
-                    <div class="weekend">Sat</div>
-                </div>
-                <div class="days">
-                    <button class="prev-date" data-event-target="#event">27</button>
-                    <button class="prev-date" data-event-target="#event">28</button>
-                    <button class="prev-date" data-event-target="#event">29</button>
-                    <button class="prev-date" data-event-target="#event">30</button>
-                    <button class="prev-date" data-event-target="#event">31</button>
-                    <button class="today" data-event-target="#event">1<div class="dot"></div></button>
-                    <button data-event-target="#event">2<div class="dot"></div></button>
-                    <button data-event-target="#event">3<div class="dot"></div></button>
-                    <button data-event-target="#event">4<div class="dot"></div></button>
-                    <button data-event-target="#event">5<div class="dot"></div></button>
-                    <button data-event-target="#event">6<div class="dot"></div></button>
-                    <button data-event-target="#event">7<div class="dot"></div></button>
-                    <button data-event-target="#event">8<div class="dot"></div></button>
-                    <button data-event-target="#event">9<div class="dot"></div></button>
-                    <button data-event-target="#event">10<div class="dot"></div></button>
-                    <button data-event-target="#event">11<div class="dot"></div></button>
-                    <button data-event-target="#event">12<div class="dot"></div></button>
-                    <button data-event-target="#event">13<div class="dot"></div></button>
-                    <button data-event-target="#event">14<div class="dot"></div></button>
-                    <button data-event-target="#event">15<div class="dot"></div></button>
-                    <button data-event-target="#event">16<div class="dot"></div></button>
-                    <button data-event-target="#event">17<div class="dot"></div></button>
-                    <button data-event-target="#event">18<div class="dot"></div></button>
-                    <button data-event-target="#event">19<div class="dot"></div></button>
-                    <button data-event-target="#event">20<div class="dot"></div></button>
-                    <button data-event-target="#event">21<div class="dot"></div></button>
-                    <button data-event-target="#event">22<div class="dot"></div></button>
-                    <button data-event-target="#event">23<div class="dot"></div></button>
-                    <button data-event-target="#event">24<div class="dot"></div></button>
-                    <button data-event-target="#event">25<div class="dot"></div></button>
-                    <button data-event-target="#event">26<div class="dot"></div></button>
-                    <button data-event-target="#event">27<div class="dot"></div></button>
-                    <button data-event-target="#event">28<div class="dot"></div></button>
-                    <button data-event-target="#event">29<div class="dot"></div></button>
-                    <button data-event-target="#event">30<div class="dot"></div></button>
-                    <button data-event-target="#event">31<div class="dot"></div></button>
-                    <button class="next-date" data-event-target="#event">1</button>
-                    <button class="next-date" data-event-target="#event">2</button>
-                    <button class="next-date" data-event-target="#event">3</button>
-                    <button class="next-date" data-event-target="#event">4</button>
-                    <button class="next-date" data-event-target="#event">5</button>
-                    <button class="next-date" data-event-target="#event">6</button>
-                </div>
-            </div>
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p>Today : &nbsp;&nbsp;<button></button></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
         </div>
+        <div class="main">
+          <div class="weekdays">
+            <div class="weekend">Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div class="weekend">Sat</div>
+          </div>
+          <div class="days">
+            <button class="prev-date" data-event-target="#event">27</button>
+            <button class="prev-date" data-event-target="#event">28</button>
+            <button class="prev-date" data-event-target="#event">29</button>
+            <button class="prev-date" data-event-target="#event">30</button>
+            <button class="prev-date" data-event-target="#event">31</button>
+            <button class="today" data-event-target="#event">
+              1
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              2
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              3
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              4
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              5
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              6
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              7
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              8
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              9
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              10
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              11
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              12
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              13
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              14
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              15
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              16
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              17
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              18
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              19
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              20
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              21
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              22
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              23
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              24
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              25
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              26
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              27
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              28
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              29
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              30
+              <div class="dot"></div>
+            </button>
+            <button data-event-target="#event">
+              31
+              <div class="dot"></div>
+            </button>
+            <button class="next-date" data-event-target="#event">1</button>
+            <button class="next-date" data-event-target="#event">2</button>
+            <button class="next-date" data-event-target="#event">3</button>
+            <button class="next-date" data-event-target="#event">4</button>
+            <button class="next-date" data-event-target="#event">5</button>
+            <button class="next-date" data-event-target="#event">6</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="event modal" id="event">
-        <div class="heading">
-            <h1>Events</h1>
-            <button data-close-button class="closebtn">&times;</button>
-        </div>
-        <div class="content">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni amet assumenda eaque eum pariatur
-                blanditiis perferendis consequuntur, error numquam maxime iure reprehenderit quod totam ipsum suscipit
-                nesciunt impedit, consectetur rerum! Illum unde deleniti corporis aperiam sequi ratione autem possimus
-                voluptates alias perferendis optio, deserunt reiciendis et neque debitis voluptatum, harum vel doloribus
-                qui odit eos quidem! Modi, consequuntur distinctio accusantium delectus ab, totam magnam doloribus dicta
-                possimus quas aliquam quo reprehenderit a odio, reiciendis corporis consectetur veniam ad adipisci
-                saepe!</p>
-        </div>
+      <div class="heading">
+        <h1>Events</h1>
+        <button data-close-button class="closebtn">&times;</button>
+      </div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni amet assumenda eaque eum pariatur blanditiis perferendis consequuntur, error numquam
+          maxime iure reprehenderit quod totam ipsum suscipit nesciunt impedit, consectetur rerum! Illum unde deleniti corporis aperiam sequi ratione autem
+          possimus voluptates alias perferendis optio, deserunt reiciendis et neque debitis voluptatum, harum vel doloribus qui odit eos quidem! Modi,
+          consequuntur distinctio accusantium delectus ab, totam magnam doloribus dicta possimus quas aliquam quo reprehenderit a odio, reiciendis corporis
+          consectetur veniam ad adipisci saepe!
+        </p>
+      </div>
     </div>
     <div id="overlay"></div>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
